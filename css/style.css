@@ -1,0 +1,1363 @@
+@charset "urt-8";
+
+/* commonここから */
+/* p106 */
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    color: #6e5f44;
+
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6em;
+}
+
+h2 {
+    text-shadow: 3px 5px 0px#ccc;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+h1 {
+    font-weight: 900;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+/* 共通設定 */
+
+
+
+
+
+
+/* footer */
+
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* p109*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    color: #000;
+    line-height: 1;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    /* max-width: 1100px; */
+    width: 100%;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+header div.logo_box {
+    width: 250px;
+}
+
+header h1 {
+    /* width: 20%; */
+    background-image: url(../img/reef.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header p {
+    padding-right: 20px;
+
+}
+
+.nimteikou {
+    text-align: center;
+    display: block;
+    /* left: 0%; */
+}
+
+
+header>div {
+    width: 60%;
+    text-align: right;
+}
+
+header>div .insta {
+    width: 50px;
+}
+
+header>div .line {
+    width: 50px;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+
+header nav ul li {
+    margin: 0 20px 0;
+}
+
+/* p119 */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 999;
+
+}
+
+.footer>div {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100px;
+    background-color: #c5d9b4;
+}
+
+.footer>p {
+    width: 20%;
+}
+
+.footer-logo {
+    width: 60%;
+
+    text-align: center;
+    /* background-image: url(../img/reef.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 50px 0;
+    /*p122 教科書 ???*/
+    /* padding-left: 90px; */
+}
+
+.footer .footer-logo_p {
+    font-size: 20px;
+}
+
+.footer_left {
+    animation-name: footer_left;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+}
+
+@keyframes footer_left {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    100% {
+        transform: translate(0, -15px)
+    }
+}
+
+.footer_right {
+    animation-name: footer_right;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+}
+
+@keyframes footer_right {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    100% {
+        transform: translate(0, -15px)
+    }
+}
+
+/* 
+.footer_pic img{
+    
+} */
+
+.footer .copyright {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 20px 0;
+    text-align: center;
+
+}
+
+.copyright {
+    margin-bottom: 10px;
+}
+
+/* p124 */
+
+/* commonここまで */
+/* homeここから */
+
+.first-view {
+    height: calc(100vh - 110px);
+    background-image: url(../img/index_main.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: baseline;
+    /* p174 */
+    max-width: 1400px;
+}
+
+
+.first-view h1 {
+    padding-top: 20%;
+    padding-left: 10%;
+}
+
+.lead {
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.lead p {
+    line-height: 2;
+
+
+}
+
+.link-button-area {
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.link-button {
+    background-color: rgb(212, 201, 138);
+    display: inline-block;
+    min-width: 180px;
+    line-height: 48px;
+    border-radius: 24px;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+
+.link-button:hover {
+    background-color: #fff;
+
+    /* p185 */
+}
+
+.watasitati {
+    padding-top: 10%;
+}
+
+.yokonarabi {
+    display: flex;
+}
+
+.yokonarabi img {
+
+    padding: 10px;
+}
+
+.yokonarabi h2 {
+    padding-top: 30px;
+
+}
+
+.yoseue {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.kisoleft {
+    padding: 0 50px 0 150px;
+    position: relative;
+}
+
+.kisoleft p {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+
+.kousiright {
+    padding: 150px 100PX 0 50px;
+    position: relative;
+}
+
+.kousiright p {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+
+
+
+/* p211 */
+.recommended {
+    padding: 0 20px 300px;
+
+}
+
+.recommended h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.recommended img {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 0%;
+}
+
+.motto {
+    position: relative;
+    left: 10∞;
+}
+
+.motto p {
+    position: absolute;
+    left: 47%;
+    top: 63%;
+    color: #fff;
+}
+
+
+.single-item {
+    margin-top: 50px;
+}
+
+.item-list {
+    display: flex;
+    padding: 40px 10px 20px 20px;
+
+}
+
+.item-list li {
+    flex-shrink: 0;
+    width: 260px;
+    margin-left: 75px;
+
+}
+
+.item-list li:first-child {
+    margin-left: 0;
+}
+
+.title {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.title h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+
+.title p {
+    font-size: 20px;
+    margin-top: 50px;
+
+
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+    max-width: 90%;
+    margin: 50px auto 0;
+    align-items: flex-start;
+
+}
+
+.feature ul {
+    font-size: 25px;
+
+}
+
+.feature img {
+    width: 360px;
+    padding-top: 10%;
+}
+
+.feature p {
+    padding-top: 30px;
+    display: flex;
+}
+
+.feature-text {
+    max-width: 500px;
+    margin-right: 40px;
+    line-height: 1.8;
+    padding-left: 10px;
+    list-style: none;
+}
+
+
+.feature-text h2 {
+    font-size: 30px;
+}
+
+.feature-text li {
+    list-style: disc;
+    margin-left: 10%;
+}
+
+
+.feature-text p {
+    font-size: 30px;
+    line-height: 20px;
+    text-shadow: 1px 1px 5px #6e5f44;
+    padding-bottom: 50px;
+    padding-top: 0;
+    margin-top: 0;
+    line-height: 30px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .feature-text {
+    margin-left: 0px;
+    margin-right: 0;
+}
+
+
+
+
+
+.movie {
+    width: 930px;
+    max-width: 90%;
+    background-color: #f8f8f8;
+    padding: 50px 60px;
+    margin: 55px auto 0;
+}
+
+.movie h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+.movie iframe {
+    display: block;
+    width: 100%;
+    height: 456px;
+    margin-top: 30px;
+
+}
+
+.movie p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+/* 多肉植物寄せ植え講師資格取得講座 */
+.kousi-top {
+    z-index: -999;
+    display: flex;
+    position: relative;
+    background: url(../img/kousi_home.png) center/cover no-repeat;
+    height: 700px;
+}
+
+.kousi-top .yokonarabi {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.kousi-top img {
+    width: auto;
+    /* max-width: 1400px;
+    z-index: -999; */
+}
+
+.kousi-top h1 span {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding-bottom: 100px; */
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+.kousi-top h1 {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.kousi-course h2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.kousi-course ul {
+    list-style: disc;
+    padding-left: 20%;
+    padding-top: 50px;
+    position: absolute;
+}
+
+.kousi-course ul li {
+    padding: 23px;
+}
+
+.kousi-course p {
+    padding-left: 20%;
+
+    position: absolute;
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+.kousi-course img {
+    position: relative;
+    z-index: -99;
+    left: 10%;
+}
+
+.kousi-pic1 img {
+    padding: 20% 0 10% 50%;
+}
+
+.kousi-shutoku {
+    padding: 10% 10% 10%;
+}
+
+.kousi-shutoku h2 {
+    padding-bottom: 10%;
+}
+
+.kousi-shutoku dl dd {
+    padding: 5%;
+    line-height: 30px;
+}
+
+.kousi-shutoku dl dt {
+    padding: 10px;
+}
+
+.kousi-naiyou .box {
+    position: relative;
+}
+
+.kousi-naiyou .box._2 {
+    margin-top: 400px;
+}
+
+.kousi-naiyou .box .bg_img {
+    position: absolute;
+    z-index: -1;
+    bottom: -500px;
+    right: 300px;
+    display: block;
+}
+
+.kousi-naiyou .box .text_area {
+    position: relative;
+}
+
+.kousi-naiyou .box .text_area img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.kousi-naiyou .box .text_area .text {
+    padding: 70px 0 0 60px;
+}
+
+.text_area img {
+    padding-left: 10%;
+}
+
+.kousi-naiyou .box._2 .img2 {
+    display: block;
+    margin: 230px 0 0 auto;
+}
+
+.text {
+    left: 20%;
+    top: 20%;
+}
+
+.text_area .text h2 {
+    padding-left: 15%;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.text_area .text dd {
+    padding-top: 30px;
+    padding-left: 20%;
+    font-size: 20px;
+}
+
+.saiten h2 {
+    padding: 10% 0 5% 15%;
+
+}
+
+.saiten ul {
+    padding: 0 20% 0;
+    font-size: 20px;
+}
+
+.saiten ul li {
+    padding: 10px;
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+.kousi_pic4 {
+    padding-top: 10%;
+    position: relative;
+}
+
+.kousi_shikaku4 {
+    position: absolute;
+    left: 45%;
+    padding-top: 80%;
+    z-index: -1;
+}
+
+.soufu h2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+}
+
+.soufu ul {
+    font-size: 20px;
+    padding-left: 20%;
+    list-style: disc;
+}
+
+.soufu ul li {
+    padding: 10px;
+}
+
+.soufu img {
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+.ryoukin h2 {
+    padding-left: 15%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ryoukin dl {
+
+    padding-left: 20%;
+    padding-bottom: 300px;
+    font-size: 20px;
+}
+
+.ryoukin dl dd {
+    padding: 10px;
+}
+
+.ryoukin dl dt {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.kiso-top {
+
+    z-index: -999;
+    display: flex;
+    position: relative;
+    background: url(../img/kiso_home.png) center/cover no-repeat;
+    height: 700px;
+}
+
+.kiso-top .yokonarabi {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.kiso-top img {
+    width: auto;
+}
+
+.kiso-top h1 span {
+
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+.kiso-top h1 {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.kouza1 {
+    margin-left: 5%;
+    margin-top: 80PX;
+    z-index: -1;
+}
+
+.kiso-kouza .kouza1 img {
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+.kouza-p {
+    position: absolute;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.kouza-p h2 {
+    width: 100%;
+    text-align: center;
+    padding: 70PX 0 0%;
+}
+
+.kouza-p ul {
+    padding: 90px 0 10% 30%;
+}
+
+.kouza-p li {
+    list-style: disc;
+    padding: 10px;
+}
+
+.kouza-p p {
+    padding: 0% 0 0% 20%;
+    padding-bottom: 10px;
+}
+
+.kouza2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+}
+
+.nagare h2 {
+    padding: 10% 0 10% 20%;
+}
+
+.nagare dl {
+
+    padding: 0 0 0 20%;
+}
+
+.nagare dt {
+    font-size: 20px;
+    padding: 30px;
+}
+
+.nagare dd {
+    padding: 10px;
+}
+
+.nagare p {
+    padding: 5% 0 0 30%;
+}
+
+.kiso_pic2 {
+    margin-top: 10%;
+    position: relative;
+}
+
+.kiso_pic3 {
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -10%;
+    z-index: -1;
+}
+
+.kiso-naiyou {
+    font-size: 20px;
+}
+
+.kiso-naiyou h2 {
+    padding: 10% 0 10% 20%;
+}
+
+.kiso-naiyou p {
+    padding: 0 0 0 20%;
+}
+
+.kiso-naiyou dl {
+    font-size: 25px;
+    display: flex;
+    padding: 0 0 5% 20%;
+}
+
+.kiso-naiyou dd {
+    margin: 0 30px;
+}
+
+.kiso-naiyou ul {
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.kiso-naiyou li {
+    list-style: disc;
+    margin: 20px;
+}
+
+.kiso-pic {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 30px 500px;
+}
+
+.title1 {
+    z-index: -999;
+    display: flex;
+    position: relative;
+    background: url(../img/contact_home.png) center/cover no-repeat;
+    height: 700px;
+    padding-top: -30px;
+
+}
+
+.title1 .yokonarabi {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title1 img {
+    width: auto;
+}
+
+
+.title1 h1 {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    text-align: center;
+    margin: 10% 0;
+}
+
+.submit-button {
+    text-align: center;
+    background-color: #dde3d7;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.submit-button_p {
+    text-align: center;
+
+}
+
+.submit-button:hover {
+    background-color: aquamarine;
+    box-shadow: none;
+    transform: translateY(5px);
+
+}
+
+.map h2 {
+
+    text-align: center;
+}
+
+.chuui {
+    margin-bottom: 300px;
+}
+
+.chuui h2 {
+    text-align: center;
+    padding: 10% 0 10%;
+}
+
+.chuui ul {
+
+    list-style: disc;
+    padding-bottom: 500px;
+    position: absolute;
+}
+
+.chuui ul li {
+    width: 70%;
+    margin: 10% 0;
+}
+
+.access-box {
+    width: 950px;
+    height: 500px;
+    background-color: #dde3d7;
+    border-radius: 50px;
+    position: relative;
+    margin: 0 auto 0;
+}
+
+
+.access-box ul {
+    width: 950px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+
+.main h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+
+.map {
+    width: 930px;
+    max-width: 90%;
+    margin: 75px auto 0;
+}
+
+.map h2 {
+    margin: 10% 0;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    height: 320px;
+    margin-top: 25px;
+}
+
+.contact {
+    width: 930px;
+    max-width: 90%;
+    margin: 75px auto 0;
+}
+
+.form-area {
+    background-color: #dde3d7;
+    border: 1px solid #aaa;
+    margin-top: 25px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-area dt {
+    width: 200px;
+}
+
+.form-area dd {
+    width: calc(100% - 200px);
+    padding: 15px 0;
+
+}
+
+.input-text {
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    padding: 0 10px;
+
+}
+
+.select-box {
+    width: 200px;
+    height: 40px;
+}
+
+.radio-button {
+    display: block;
+    margin-top: 20px;
+}
+
+.radio-button:first-child {
+    margin-top: 0;
+}
+
+.radio-button input {
+    margin-right: 8px;
+}
+
+.message {
+    width: 100%;
+    height: 260px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.confirm-text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+
+.submit-button {
+    display: inline-block;
+    min-width: 180px;
+    line-height: 48px;
+    border-radius: 24px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #aabe95;
+}
+
+.title2 {
+    z-index: -999;
+    display: flex;
+
+    position: relative;
+    background: url(../img/contact_home.png) center/cover no-repeat;
+    height: 700px;
+
+}
+
+.title2 .yokonarabi {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title2 img {
+    width: auto;
+}
+
+
+.title2 h1 {
+    text-align: center;
+}
+
+.sakuhin_plant {
+    text-align: right;
+    margin-right: 100px;
+}
+
+
+.container {
+    width: 930px;
+    max-width: 90%;
+    margin: 0 auto 30%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    column-gap: 95px;
+    row-gap: 70px;
+    justify-content: center;
+}
+
+/*========= ローディング画面のためのCSS ===============*/
+#splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999999;
+    text-align: center;
+    color: #fff;
+}
+
+#splash-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+
+    text-align: center;
+    background-image: url(../img/reef.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 50px 0;
+    font-size: 50px;
+}
+
+
+/*========= 画面遷移のためのCSS ===============*/
+
+/*画面遷移アニメーション*/
+
+body {
+    background: #fff;
+    /*遷移アニメーションと同じ色を指定*/
+}
+
+body.appear {
+    background: #fff;
+    /*画面を開いた後の背景色を指定*/
+}
+
+/* 
+.splashbg{
+	position: fixed;
+	top: 0;
+	right:0;
+	bottom:0;
+	left: 0;
+	border-width: 0px;/*開始はボーダーの太さは0*/
+/* border-style:solid; */
+/* border-color: #aabe95;拡大する四角の色 */
+/* animation-duration:.5s; */
+/* animation-fill-mode:forwards; 
+} */
+
+@keyframes backBoxAnime {
+    99.9% {
+        /*アニメーション終了ぎりぎりまで*/
+        z-index: 2;
+        /*最前面に*/
+        border-width: 0px;
+        /*開始はボーダーの太さは0*/
+    }
+
+    100% {
+        z-index: -1;
+        /*最背面に*/
+        border-width: 0px;
+        /*終了はボーダーの太さは0*/
+    }
+}
+
+/*画面遷移の後現れるコンテンツ設定*/
+#container {
+    position: relative;
+    opacity: 0;
+    /*はじめは透過0に*/
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear #container {
+    animation-name: PageAnimeAppear;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes PageAnimeAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.anim-box.poyoyon2.is-animated {
+    animation: poyoyon2 1s ease-in-out 1 forwards;
+}
+
+@keyframes poyoyon2 {
+    0% {
+        transform: scale(1.0, 1.0) translate(0, 0);
+    }
+
+    15% {
+        transform: scale(0.98, 0.9) translate(0, 5px);
+    }
+
+    30% {
+        transform: scale(1.02, 1.0) translate(0, 8px);
+    }
+
+    50% {
+        transform: scale(0.98, 1.05) translate(0, -8px);
+    }
+
+    70% {
+        transform: scale(1.0, 0.9) translate(0, 5px);
+    }
+
+    100% {
+        transform: scale(1.0, 1.0) translate(0, 0);
+    }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+span.smoothText {
+    overflow: hidden;
+    display: block;
+}
+
+.first-view .title {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    text-decoration: none;
+    transition: text-shadow .5s;
+}
+
+/* 竊凪�1譁�ｭ励★縺､蜍輔￥css繧｢繝九Γ縺ｮ謖�ｮ� */
+
+/* 讓ｪ荳ｦ縺ｳ縺ｫ縺励※縺ｯ縺ｿ蜃ｺ縺鈴Κ蛻�ｒ豸医☆ */
+.first-view .wrap {
+    display: flex;
+    overflow: hidden;
+}
+
+/* 譛蛻昴�騾乗�縺ｧ2遘偵°縺代※螳溯｡� */
+.first-view .wrap span {
+    opacity: 0;
+    animation: onetxtanime 2s forwards;
+}
+
+/* 1譁�ｭ礼岼縺九ｉ0.5遘貞綾縺ｿ縺ｧ蜃ｺ迴ｾ */
+.first-view .wrap span:nth-child(1) {
+    animation-delay: 0.5s
+}
+
+.first-view .wrap span:nth-child(2) {
+    animation-delay: 1.0s
+}
+
+.first-view .wrap span:nth-child(3) {
+    animation-delay: 1.5s
+}
+
+.first-view .wrap span:nth-child(4) {
+    animation-delay: 2.0s
+}
+
+.first-view .wrap span:nth-child(5) {
+    animation-delay: 2.5s
+}
+
+.first-view .wrap span:nth-child(6) {
+    animation-delay: 3.0s
+}
+
+.first-view .wrap span:nth-child(7) {
+    animation-delay: 3.5s
+}
+
+/* 騾乗�縺九ｉ荳埼乗�縺ｫ縺吶ｋ */
+@keyframes onetxtanime {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 800px) {
+    .site-menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .site-menu ul li {
+        margin-top: 20px;
+    }
+
+    .logo_box h1 {
+        width: 100px;
+        font-size: 20px;
+
+    }
+
+    .first-view h1 {
+        padding: 50% 0 0 0;
+    }
+
+    .feature {
+        display: block;
+    }
+}
